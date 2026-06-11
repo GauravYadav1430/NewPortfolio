@@ -6,7 +6,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 const ROLES = ["Software Engineer", "AI Developer", "Full Stack Builder", "Problem Solver"];
 
 const STATS = [
-  { value: 500, suffix: "+", label: "DSA Problems Solved", icon: "⚡" },
+  { value: 25, suffix: "+", label: "DSA Problems Solved", icon: "⚡" },
   { value: 20,  suffix: "+", label: "Projects Built",      icon: "🚀" },
   { value: 8,   suffix: "+", label: "Technologies",        icon: "🛠️" },
   { value: 1000,suffix: "+", label: "Hours of Code",       icon: "💻" },
@@ -51,8 +51,8 @@ const PROJECTS = [
     tech: ["TensorFlow.js", "Claude API", "React", "Python", "OpenCV"],
     metrics: ["95%+ Accuracy", "Dual AI Models", "Real-time Analysis"],
     color: "#00D4FF", featured: true,
-    github: "https://github.com/GauravYadav1430",
-    demo: "https://portfolio-mauve-nine-46.vercel.app/",
+    github: "https://github.com/GauravYadav1430/agrivision",
+    demo: "https://agrivision-1e1f.onrender.com/",
   },
   {
     id: 2, emoji: "🔐", name: "CascadeLock",
@@ -103,7 +103,7 @@ const PROJECTS = [
 
 const TIMELINE = [
   { year: "2023",    title: "Joined NIT Jalandhar",     desc: "Began B.Tech CS Engineering. Deep-dived into DSA, algorithms, and competitive programming from day one.", type: "edu" },
-  { year: "2023–24", title: "500+ DSA Problems",         desc: "LeetCode, Codeforces, GFG — specialized in graphs, DP, trees and number theory.", type: "win" },
+  { year: "2023–24", title: "25+ DSA Problems",         desc: "LeetCode, Codeforces, GFG — specialized in graphs, DP, trees and number theory.", type: "win" },
   { year: "2024",    title: "CascadeLock & DineOnTime",  desc: "Built triple-layer hybrid encryption protocol and campus restaurant app as IS&S lab projects.", type: "proj" },
   { year: "2025",    title: "AgriVision AI System",      desc: "Combined TensorFlow.js + Claude Vision API for 95%+ accurate real-time crop disease detection.", type: "ai" },
   { year: "2026",    title: "Building at Scale",         desc: "Production apps, PITCH analytics, expanded ML expertise. Open to internships and opportunities.", type: "now" },
@@ -517,7 +517,7 @@ export default function Portfolio() {
                 I'm Gaurav, a Computer Science student (Roll No. 23103055) who bridges the gap between intelligent systems and beautiful user experiences — from training deep learning models to crafting pixel-perfect UIs.
               </p>
               <p style={{ color:"rgba(255,255,255,0.47)", lineHeight:1.9, fontSize:15, marginBottom:36 }}>
-                My work spans competitive programming (500+ DSA solved), AI/ML with real-world accuracy metrics, and full-stack applications trusted by campus communities. I think in systems, build with precision, and ship with purpose.
+                My work spans competitive programming (25+ DSA solved), AI/ML with real-world accuracy metrics, and full-stack applications trusted by campus communities. I think in systems, build with precision, and ship with purpose.
               </p>
               <div style={{ display:"flex", gap:12 }}>
                 <a href="https://github.com/GauravYadav1430" target="_blank" rel="noreferrer"
