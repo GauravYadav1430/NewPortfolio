@@ -62,6 +62,7 @@ const PROJECTS = [
     metrics: ["3-Layer Crypto", "RSA-OAEP", "Browser Native"],
     color: "#7C3AED",
     github: "https://github.com/GauravYadav1430/CascadeLock-V2",
+    demo: "https://agrivision-1e1f.onrender.com/",
   },
   {
     id: 3, emoji: "📊", name: "MESScope",
@@ -71,6 +72,7 @@ const PROJECTS = [
     metrics: ["ML Forecasting", "Live Dashboard", "Analytics"],
     color: "#FF6B6B",
     github: "https://github.com/GauravYadav1430",
+    demo: "https://agrivision-1e1f.onrender.com/",
   },
   {
     id: 4, emoji: "🍱", name: "Tiffy",
@@ -80,6 +82,7 @@ const PROJECTS = [
     metrics: ["Role-based Auth", "Subscriptions", "Multi-page"],
     color: "#F59E0B",
     github: "https://github.com/GauravYadav1430",
+    demo: "https://agrivision-1e1f.onrender.com/",
   },
   {
     id: 5, emoji: "⚽", name: "PITCH",
@@ -89,6 +92,7 @@ const PROJECTS = [
     metrics: ["Live Data", "xG Analytics", "AI Insights"],
     color: "#10B981",
     github: "https://github.com/GauravYadav1430",
+    demo: "https://agrivision-1e1f.onrender.com/",
   },
   {
     id: 6, emoji: "💰", name: "Loan Predictor",
@@ -98,6 +102,7 @@ const PROJECTS = [
     metrics: ["89% Accuracy", "Multi-Algorithm", "Visual Reports"],
     color: "#34D399",
     github: "https://github.com/GauravYadav1430",
+    demo: "https://agrivision-1e1f.onrender.com/",
   },
 ];
 
@@ -266,12 +271,15 @@ function ProjectCard({ p }) {
     const y = (e.clientY - r.top)  / r.height - 0.5;
     e.currentTarget.style.transform = `perspective(700px) rotateY(${x*14}deg) rotateX(${-y*14}deg) scale(1.02)`;
   };
+
   return (
     <div onMouseMove={onMove}
       onMouseEnter={e => { e.currentTarget.style.borderColor=`${p.color}50`; e.currentTarget.style.boxShadow=`0 24px 64px ${p.color}22`; }}
       onMouseLeave={e => { e.currentTarget.style.transform="perspective(700px) rotateY(0) rotateX(0) scale(1)"; e.currentTarget.style.borderColor="rgba(255,255,255,0.07)"; e.currentTarget.style.boxShadow="none"; }}
       style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.07)", borderRadius:22, padding:"26px", transition:"transform 0.15s ease, box-shadow 0.3s, border-color 0.3s", willChange:"transform", position:"relative", overflow:"hidden", cursor:"default" }}>
+      
       <div style={{ position:"absolute", top:-40, right:-40, width:130, height:130, borderRadius:"50%", background:p.color, opacity:0.07, filter:"blur(40px)", pointerEvents:"none" }} />
+      
       <div style={{ display:"flex", gap:14, alignItems:"flex-start", marginBottom:14 }}>
         <div style={{ width:48, height:48, borderRadius:12, background:`${p.color}18`, border:`1px solid ${p.color}35`, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22, flexShrink:0 }}>{p.emoji}</div>
         <div>
@@ -279,19 +287,43 @@ function ProjectCard({ p }) {
           <div style={{ color:p.color, fontSize:11, fontFamily:"'JetBrains Mono',monospace", marginTop:2 }}>{p.tagline}</div>
         </div>
       </div>
+      
       <p style={{ color:"rgba(255,255,255,0.47)", fontSize:13, lineHeight:1.75, marginBottom:18 }}>{p.desc}</p>
+      
       <div style={{ display:"flex", gap:6, flexWrap:"wrap", marginBottom:14 }}>
         {p.metrics.map(m => <span key={m} style={{ padding:"3px 10px", borderRadius:100, background:`${p.color}14`, border:`1px solid ${p.color}30`, color:p.color, fontSize:10, fontFamily:"'JetBrains Mono',monospace" }}>{m}</span>)}
       </div>
+      
       <div style={{ display:"flex", gap:6, flexWrap:"wrap", marginBottom:18 }}>
         {p.tech.map(t => <span key={t} style={{ padding:"3px 9px", borderRadius:100, background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.1)", color:"rgba(255,255,255,0.55)", fontSize:11, fontFamily:"'JetBrains Mono',monospace" }}>{t}</span>)}
       </div>
-      <a href={p.github} target="_blank" rel="noreferrer"
-        style={{ display:"inline-flex", alignItems:"center", gap:6, fontSize:12, color:"rgba(255,255,255,0.55)", textDecoration:"none", padding:"7px 14px", borderRadius:100, border:"1px solid rgba(255,255,255,0.1)", transition:"all 0.2s" }}
-        onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.07)"; e.currentTarget.style.color="#fff"; }}
-        onMouseLeave={e => { e.currentTarget.style.background="transparent"; e.currentTarget.style.color="rgba(255,255,255,0.55)"; }}>
-        <FiGithub size={13} /> GitHub
-      </a>
+
+      {/* ══════════════ ACTION BUTTONS ══════════════ */}
+      <div style={{ display: "flex", gap: 8 }}>
+        
+        {/* GitHub Button */}
+        {p.github && (
+          <a href={p.github} target="_blank" rel="noreferrer"
+            style={{ display:"inline-flex", alignItems:"center", gap:6, fontSize:12, color:"rgba(255,255,255,0.55)", textDecoration:"none", padding:"7px 14px", borderRadius:100, border:"1px solid rgba(255,255,255,0.1)", transition:"all 0.2s" }}
+            onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.07)"; e.currentTarget.style.color="#fff"; }}
+            onMouseLeave={e => { e.currentTarget.style.background="transparent"; e.currentTarget.style.color="rgba(255,255,255,0.55)"; }}>
+            <FiGithub size={13} /> GitHub
+          </a>
+        )}
+
+        {/* Live Demo Button */}
+        {p.demo && (
+          <a href={p.demo} target="_blank" rel="noreferrer"
+            style={{ display:"inline-flex", alignItems:"center", gap:6, fontSize:12, color:"#fff", textDecoration:"none", padding:"7px 14px", borderRadius:100, border:`1px solid ${p.color}60`, background:`${p.color}20`, transition:"all 0.2s" }}
+            onMouseEnter={e => { e.currentTarget.style.background=`${p.color}40`; e.currentTarget.style.boxShadow=`0 0 12px ${p.color}40`; }}
+            onMouseLeave={e => { e.currentTarget.style.background=`${p.color}20`; e.currentTarget.style.boxShadow="none"; }}>
+            <ExternalLink size={13} /> Live Demo
+          </a>
+        )}
+
+      </div>
+      {/* ═════════════════════════════════════════════ */}
+
     </div>
   );
 }
