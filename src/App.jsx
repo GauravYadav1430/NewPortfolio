@@ -61,7 +61,7 @@ const PROJECTS = [
     tech: ["Web Crypto API", "JavaScript", "GSAP", "HTML/CSS"],
     metrics: ["3-Layer Crypto", "RSA-OAEP", "Browser Native"],
     color: "#7C3AED",
-    github: "https://github.com/GauravYadav1430",
+    github: "https://github.com/GauravYadav1430/CascadeLock-V2",
   },
   {
     id: 3, emoji: "📊", name: "MESScope",
