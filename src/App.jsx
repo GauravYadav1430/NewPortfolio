@@ -631,13 +631,13 @@ export default function Portfolio() {
                   )}
                 </div>
                 <div style={{ display:"flex", gap:12 }}>
-                  <a href="https://github.com/GauravYadav1430" target="_blank" rel="noreferrer"
+                  <a href="https://github.com/GauravYadav1430/agrivision" target="_blank" rel="noreferrer"
                     style={{ display:"flex", alignItems:"center", gap:8, textDecoration:"none", padding:"13px 26px", borderRadius:100, background:GRD, color:"#fff", fontSize:14, fontFamily:"'Syne',sans-serif", fontWeight:600, boxShadow:"0 4px 24px rgba(0,212,255,0.22)", transition:"opacity 0.2s" }}
                     onMouseEnter={e => e.currentTarget.style.opacity="0.88"}
                     onMouseLeave={e => e.currentTarget.style.opacity="1"}>
                     <FiGithub size={15} /> View Code
                   </a>
-                  <a href="https://portfolio-mauve-nine-46.vercel.app/" target="_blank" rel="noreferrer"
+                  <a href="https://agrivision-1e1f.onrender.com/" target="_blank" rel="noreferrer"
                     style={{ display:"flex", alignItems:"center", gap:8, textDecoration:"none", padding:"13px 26px", borderRadius:100, background:GL, border:`1px solid ${BDR}`, color:"rgba(255,255,255,0.68)", fontSize:14, fontFamily:"'Syne',sans-serif", fontWeight:600, transition:"all 0.2s" }}
                     onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.08)"; e.currentTarget.style.color="#fff"; }}
                     onMouseLeave={e => { e.currentTarget.style.background=GL; e.currentTarget.style.color="rgba(255,255,255,0.68)"; }}>
