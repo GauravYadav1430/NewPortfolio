@@ -6,7 +6,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 const ROLES = ["Software Engineer", "AI Developer", "Full Stack Builder", "Problem Solver"];
 
 const STATS = [
-  { value: 25, suffix: "+", label: "DSA Problems Solved", icon: "⚡" },
+  { value: 75, suffix: "+", label: "DSA Problems Solved", icon: "⚡" },
   { value: 20,  suffix: "+", label: "Projects Built",      icon: "🚀" },
   { value: 8,   suffix: "+", label: "Technologies",        icon: "🛠️" },
   { value: 1000,suffix: "+", label: "Hours of Code",       icon: "💻" },
