@@ -62,7 +62,7 @@ const PROJECTS = [
     metrics: ["3-Layer Crypto", "RSA-OAEP", "Browser Native"],
     color: "#7C3AED",
     github: "https://github.com/GauravYadav1430/CascadeLock-V2",
-    demo: "https://agrivision-1e1f.onrender.com/",
+    demo: "https://cascade-lock-v2.vercel.app/",
   },
   {
     id: 3, emoji: "📊", name: "MESScope",
@@ -72,17 +72,17 @@ const PROJECTS = [
     metrics: ["ML Forecasting", "Live Dashboard", "Analytics"],
     color: "#FF6B6B",
     github: "https://github.com/GauravYadav1430",
-    demo: "https://agrivision-1e1f.onrender.com/",
+    demo: "https://messcope.vercel.app",
   },
   {
     id: 4, emoji: "🍱", name: "Tiffy",
     tagline: "Campus Food Delivery Platform",
-    desc: "Full-stack tiffin ordering ecosystem for NIT Jalandhar. Role-based dashboards, subscription management, cart engine.",
-    tech: ["HTML/CSS", "JavaScript", "Node.js", "Express"],
+    desc: "Front-End tiffin ordering ecosystem for NIT Jalandhar. Role-based dashboards, subscription management, cart engine. Working on BackEnd.",
+    tech: ["HTML", "CSS" ,"JavaScript"],
     metrics: ["Role-based Auth", "Subscriptions", "Multi-page"],
     color: "#F59E0B",
     github: "https://github.com/GauravYadav1430",
-    demo: "https://agrivision-1e1f.onrender.com/",
+    demo: "https://tiffy-one.vercel.app/about.html",
   },
   {
     id: 5, emoji: "⚽", name: "PITCH",
@@ -108,7 +108,7 @@ const PROJECTS = [
 
 const TIMELINE = [
   { year: "2023",    title: "Joined NIT Jalandhar",     desc: "Began B.Tech CS Engineering. Deep-dived into DSA, algorithms, and competitive programming from day one.", type: "edu" },
-  { year: "2023–24", title: "25+ DSA Problems",         desc: "LeetCode, Codeforces, GFG — specialized in graphs, DP, trees and number theory.", type: "win" },
+  { year: "2023–24", title: "75+ DSA Problems",         desc: "LeetCode, Codeforces, GFG — specialized in graphs, DP, trees and number theory.", type: "win" },
   { year: "2024",    title: "CascadeLock & DineOnTime",  desc: "Built triple-layer hybrid encryption protocol and campus restaurant app as IS&S lab projects.", type: "proj" },
   { year: "2025",    title: "AgriVision AI System",      desc: "Combined TensorFlow.js + Claude Vision API for 95%+ accurate real-time crop disease detection.", type: "ai" },
   { year: "2026",    title: "Building at Scale",         desc: "Production apps, PITCH analytics, expanded ML expertise. Open to internships and opportunities.", type: "now" },
@@ -500,7 +500,7 @@ export default function Portfolio() {
               onMouseLeave={e => { e.currentTarget.style.transform="none"; e.currentTarget.style.boxShadow="0 0 40px rgba(0,212,255,0.22)"; }}>
               View Projects <ArrowRight size={16} />
             </button>
-            <a href="https://portfolio-mauve-nine-46.vercel.app/" target="_blank" rel="noreferrer"
+            <a href="https://new-portfolio-sable-iota.vercel.app" target="_blank" rel="noreferrer"
               style={{ padding:"15px 34px", borderRadius:100, background:GL, border:`1px solid ${BDR}`, color:"rgba(255,255,255,0.78)", fontFamily:"'Syne',sans-serif", fontWeight:600, fontSize:15, textDecoration:"none", display:"flex", alignItems:"center", gap:8, transition:"all 0.3s" }}
               onMouseEnter={e => { e.currentTarget.style.background="rgba(255,255,255,0.09)"; e.currentTarget.style.borderColor="rgba(255,255,255,0.22)"; }}
               onMouseLeave={e => { e.currentTarget.style.background=GL; e.currentTarget.style.borderColor=BDR; }}>
@@ -549,7 +549,7 @@ export default function Portfolio() {
                 I'm Gaurav, a Computer Science student (Roll No. 23103055) who bridges the gap between intelligent systems and beautiful user experiences — from training deep learning models to crafting pixel-perfect UIs.
               </p>
               <p style={{ color:"rgba(255,255,255,0.47)", lineHeight:1.9, fontSize:15, marginBottom:36 }}>
-                My work spans competitive programming (25+ DSA solved), AI/ML with real-world accuracy metrics, and full-stack applications trusted by campus communities. I think in systems, build with precision, and ship with purpose.
+                My work spans competitive programming (75+ DSA solved), AI/ML with real-world accuracy metrics, and full-stack applications trusted by campus communities. I think in systems, build with precision, and ship with purpose.
               </p>
               <div style={{ display:"flex", gap:12 }}>
                 <a href="https://github.com/GauravYadav1430" target="_blank" rel="noreferrer"
@@ -719,7 +719,7 @@ export default function Portfolio() {
               <ContactLink icon={<Mail size={15}/>}     label="Email"     val="gauravyadav14370@gmail.com"  href="mailto:gauravyadav14370@gmail.com" />
               <ContactLink icon={<FiGithub size={15}/>}   label="GitHub"    val="GauravYadav1430"             href="https://github.com/GauravYadav1430" />
               <ContactLink icon={<FiLinkedin size={15}/>} label="LinkedIn"  val="gaurav-yadav-b016972a6"     href="https://www.linkedin.com/in/gaurav-yadav-b016972a6/" />
-              <ContactLink icon={<Globe size={15}/>}    label="Portfolio" val="portfolio.vercel.app"        href="https://portfolio-mauve-nine-46.vercel.app/" />
+              <ContactLink icon={<Globe size={15}/>}    label="Portfolio" val="portfolio.vercel.app"        href="https://new-portfolio-sable-iota.vercel.app" />
             </div>
 
             {/* Form */}
